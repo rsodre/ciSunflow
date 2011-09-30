@@ -62,8 +62,7 @@ or inside the <a href="http://prdownloads.sourceforge.net/sunflow/sunflow-data-v
 
 
 <h3>About the Author</h3>
-
-<p>Version 0 by Roger Sodre
+<br>Version 0 by Roger Sodre
 <p><a href="http://twitter.com/Roger_S">http://twitter.com/Roger_S</a>
 <br><a href="http://www.flickr.com/photos/sigilo/">http://www.flickr.com/photos/sigilo/</a>
 <br><a href="http://www.studioavante.com/">http://www.studioavante.com/</a>
