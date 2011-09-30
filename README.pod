@@ -1,4 +1,4 @@
-
+=begin html
 
 <h3>About Sunflow</h3>
 
@@ -73,3 +73,4 @@ or inside the <a href="<br>http://prdownloads.sourceforge.net/sunflow/sunflow-da
 
 
 
+=end html
