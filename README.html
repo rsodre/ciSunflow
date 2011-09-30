@@ -1,0 +1,75 @@
+
+
+<h3>About Sunflow</h3>
+
+<p>Sunflow is an open source rendering system for photo-realistic image synthesis.
+<br>It is written in Java and built around a flexible ray tracing core and an extensible object-oriented design.
+
+<p>Resources:
+<br><a href="http://sunflow.sourceforge.net/">http://sunflow.sourceforge.net/</a>
+<br><a href="http://sfwiki.geneome.net/">http://sfwiki.geneome.net/</a>
+
+
+
+<h3>About ciSunflow</h3>
+
+<p>ciSunflow will export OpenGL geometry and scene data from a <a href="http://libcinder.org/">Cinder</a> app to the Sunflow renderer.
+<br>The idea is to wrap OpenGL calls and build the Sunflow scene in a buffer.
+
+<p>Example: Instead of calling <b>gl::drawCube()</b>, call <b>sf::gl::drawCube()</b>
+<br>ciSunflow will draw the cube to screen AND add the cube to a Sunflow scene.
+
+<p>Just a few fuctions were ported so far:
+<ul>
+	<li>void sf::gl::setMatrices( const Camera &cam );</li>
+	<li>void sf::gl::drawSphere( const Vec3f &center, float radius, int segments = 12 );</li>
+	<li>void sf::gl::drawCube( const Vec3f &center, const Vec3f &size );</li>
+	<li>void sf::gl::color( const Color &c ); (unnefective)</li>
+	<li>void sf::gl::color( const ColorA &c ); (unnefective)</li>
+	<li>void sf::gl::clear( const ColorA &color = ColorA::black(), bool clearDepthBuffer = true ); (unnefective)</li>
+</ul>
+
+
+
+<h3>Things you can do</h3>
+
+<p>Version 0 is far from complete, it is just a proof of concept.
+<br>The original author have no intention to continue it's development in the moment
+<br>So please clone and improve it as you wish.
+
+<p>Those are a few things that can be implemented/improved:
+<ul>
+	<li>Create unique shaders for objects to use their openGL color</li>
+	<li>Rethink how lights should work. Currently, every scene has a default sunlight that may not be what you want on your scene</li>
+	<li>Translate VBOs and DisplayLists into meshes</li>
+	<li>Implement transformations, saving the transformation matrix to embedd into objects</li>
+	<li>Implement the Sunflow primitives, drawing OpengL dummies to the screen</li>
+	<li>Implement a new Cinder renderer inheriting <b>RendererGl</b>, and run the app using this renderer, getting completely transparent</li>
+</ul>
+
+
+<h3>How to use it</h3>
+
+<p>Clone or download this repository into your Cinder/blocks folder
+<br>Run the sunflow_example project
+
+<p>Version 0 was made using Sunflow 0.07.2 on Mac OSX 10.6.8
+<br>Should work on Windows and Linux
+
+<p>The Sunflow format is undocummented, but you can unsderstand it by looking at the <a href="http://sunflow.svn.sourceforge.net/viewvc/sunflow/trunk/src/org/sunflow/core/parser/SCParser.java?revision=396&view=markup">parser code</a>
+or inside the <a href="<br>http://prdownloads.sourceforge.net/sunflow/sunflow-data-v0.07.1.zip?download">examples</a>.
+
+
+
+<h3>About the Author</h3>
+
+<p>Version 0 by Roger Sodré
+<p><a href="http://twitter.com/Roger_S">http://twitter.com/Roger_S</a>
+<br><a href="http://www.flickr.com/photos/sigilo/">http://www.flickr.com/photos/sigilo/</a>
+<br><a href="http://www.studioavante.com/">http://www.studioavante.com/</a>
+<br><a href="http://www.vaivendo.com.br/">http://www.vaivendo.com.br/</a>
+
+<p>Version 0.1 by you...
+
+
+
